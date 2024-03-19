@@ -4,7 +4,7 @@
 
 @using (Html.BeginForm()){
     <p>
-        @InputExtensions.Hidden(Html, "Id",Model.Id)
+        <input id="@Model.Id" type="hidden" />
         Number: @Html.TextBox("Number")
         <br /><br />
     <button name="submit">Submit</button>

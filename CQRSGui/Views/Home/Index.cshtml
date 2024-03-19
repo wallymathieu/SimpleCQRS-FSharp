@@ -8,10 +8,9 @@
 <ol class="round">
 @foreach (var inventoryItemListDto in Model) {
     <li>
-        @{
-            var link = LinkExtensions.ActionLink(Html, "Name: " + inventoryItemListDto.Name, "Details", new {Id = inventoryItemListDto.Id});
-        }
-        @link
+            @Html.ActionLink(linkText: "Name: " + inventoryItemListDto.Name,
+                         actionName: "Details",
+                         routeValues: new {Id = inventoryItemListDto.Id})
     </li>
     }
     </ol>

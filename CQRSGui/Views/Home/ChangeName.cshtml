@@ -4,8 +4,7 @@
 
 @using (Html.BeginForm()) {
     <p>
-        
-        @InputExtensions.Hidden(Html, "Id", Model.Id)
+        <input id="@Model.Id" type="hidden" />
         Name:
         @Html.TextBox("Name")
         <br /><br />

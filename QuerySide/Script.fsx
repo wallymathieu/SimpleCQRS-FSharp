@@ -5,8 +5,9 @@
 // Learn more about F# at http://fsharp.net. See the 'F# Tutorial' project
 // for more guidance on F# programming.
 
-#r "System.Data.Entity.dll"
-#r "FSharp.Data.TypeProviders.dll"
+//#r "System.Data.Entity.dll"
+#r "nuget: FSharp.Data.TypeProviders, 6.0.1"
+//#r "FSharp.Data.TypeProviders.dll"
 
 #load "..\CommandSide\Events.fs"
 #load "..\CommandSide\Domain.fs"
